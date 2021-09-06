@@ -1,0 +1,18 @@
+{{>layouts/header}}
+
+<!-- articles/create로 post방식으로 보낼것이다. -->
+<form class="container" action="/articles/create" method="post">
+   <div class="mb-3">
+       <label class="form-label">제목</label>
+       <!-- dto의 필드명과 동일한 name을 설정해야 dto에서 저장이 가능-->
+       <input type="text" class="form-control" name="title">
+   </div>
+    <div class="mb-3">
+        <label class="form-label">제목</label>
+        <!-- dto의 필드명과 동일한 name을 설정해야 dto에서 저장이 가능-->
+        <textarea class="form-control" rows="3" name="content"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary"> Submit </button>
+</form>
+
+{{>layouts/footer}}
